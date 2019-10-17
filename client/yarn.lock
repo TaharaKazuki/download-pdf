@@ -2864,7 +2864,7 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-concat-stream@^1.4.7, concat-stream@^1.5.0:
+concat-stream@^1.5.0:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
   integrity sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==
@@ -3007,11 +3007,6 @@ cosmiconfig@^5.2.1:
     is-directory "^0.3.1"
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
-
-cpsenize@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/cpsenize/-/cpsenize-1.0.0.tgz#76e0352120726aaf5aa9160a4baee5e6727de0d3"
-  integrity sha1-duA1ISByaq9aqRYKS67l5nJ94NM=
 
 create-ecdh@^4.0.0:
   version "4.0.3"
@@ -4259,16 +4254,10 @@ file-loader@3.0.1:
     loader-utils "^1.0.2"
     schema-utils "^1.0.0"
 
-file-server@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/file-server/-/file-server-2.1.0.tgz#f220f1aed43bf0aaf7a184f97464e96f7d6768ad"
-  integrity sha512-P6lCMKq3AYHEiTo7b5eqQ1YbZe9SYXGaSKNSBjtCUuLu9NGW++o2MmBMkRbMnOHcOMeHJVGXh0KTMl5dPMX5aQ==
-  dependencies:
-    chokidar "^2.0.4"
-    graceful-fs "^4.1.11"
-    hashr "^1.0.2"
-    kgo "^4.0.3"
-    stream-catcher "^1.0.5"
+file-saver@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.2.tgz#06d6e728a9ea2df2cce2f8d9e84dfcdc338ec17a"
+  integrity sha512-Wz3c3XQ5xroCxd1G8b7yL0Ehkf0TC9oYC6buPFkNnU9EnaPlifeAFCyCh+iewXTyFRcg0a6j3J7FmJsIhlhBdw==
 
 filesize@3.6.1:
   version "3.6.1"
@@ -4790,11 +4779,6 @@ hash.js@^1.0.0, hash.js@^1.0.3:
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
-
-hashr@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/hashr/-/hashr-1.0.2.tgz#09ec6350fff228fdfc448f419d0840228b0f9825"
-  integrity sha1-CexjUP/yKP38RI9BnQhAIosPmCU=
 
 he@1.2.x:
   version "1.2.0"
@@ -6132,13 +6116,6 @@ jsx-ast-utils@^2.1.0, jsx-ast-utils@^2.2.1:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
 
-kgo@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/kgo/-/kgo-4.0.3.tgz#1c575f203b320ecdbcc9bdb49bc5ec874a6b35b6"
-  integrity sha1-HFdfIDsyDs28yb20m8Xsh0prNbY=
-  dependencies:
-    cpsenize "^1.0.0"
-
 killable@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -6347,14 +6324,6 @@ lower-case@^1.1.1:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
   integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
-
-lru-cache@^4.0.1:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.5.tgz#8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd"
-  integrity sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==
-  dependencies:
-    pseudomap "^1.0.2"
-    yallist "^2.1.2"
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -8226,11 +8195,6 @@ prr@~1.0.1:
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
 
-pseudomap@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
-  integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
-
 psl@^1.1.24, psl@^1.1.28:
   version "1.1.31"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.1.31.tgz#e9aa86d0101b5b105cbe93ac6b784cd547276184"
@@ -9431,15 +9395,6 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
-stream-catcher@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/stream-catcher/-/stream-catcher-1.0.5.tgz#a27c42dcfb908410b507cb0b8614b1b35aee3b5b"
-  integrity sha1-onxC3PuQhBC1B8sLhhSxs1ruO1s=
-  dependencies:
-    concat-stream "^1.4.7"
-    lru-cache "^4.0.1"
-    through "^2.3.6"
-
 stream-each@^1.1.0:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/stream-each/-/stream-each-1.2.3.tgz#ebe27a0c389b04fbcc233642952e10731afa9bae"
@@ -10598,11 +10553,6 @@ xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
   integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
-
-yallist@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
-  integrity sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
 
 yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.3"

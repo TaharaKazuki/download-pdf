@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <input type="text" placeholder="お客様名を入れてください" onChange={this.handleChange}/>
+        <input type="text" placeholder="お客様名を入れてください" name="name" onChange={this.handleChange}/>
         <input type="number" placeholder="Receipt ID" name="receipId" onChange={this.handleChange}/>
         <input type="number" placeholder="price1" name="price1" onChange={this.handleChange}/>
         <input type="number" placeholder="price2" name="price2" onChange={this.handleChange}/>
